@@ -1,5 +1,6 @@
 {
   "name": "isekku-astro",
+  "type": "commonjs",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
