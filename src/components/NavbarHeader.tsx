@@ -23,7 +23,7 @@ export default function NavbarHeader() {
   }, [])
 
   return (
-    <header id='header' className={`w-full z-40 bg-opacity-100 flex flex-row py-4 mobile:justify-center desktop:justify-between items-center desktop:px-20 mobile:px-1/16 sticky top-0 backdrop-filter backdrop-blur-lg transition ease-in-out duration-200 ${
+    <header className={`w-full z-40 bg-opacity-100 desktop:h-24 mobile:h-16 flex flex-row mobile:justify-center desktop:justify-between items-center desktop:px-20 mobile:px-1/16 sticky top-0 backdrop-filter backdrop-blur-lg transition ease-in-out duration-200 ${
       animateHeader 
         ? 'shadow-2xl bg-accent bg-opacity-50'
         : 'bg-accent'
