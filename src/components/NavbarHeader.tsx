@@ -23,7 +23,7 @@ export default function NavbarHeader() {
   }, [])
 
   return (
-    <header className={`w-full z-40 bg-opacity-100 desktop:h-24 mobile:h-1/10 flex flex-row mobile:justify-center desktop:justify-between items-center desktop:px-20 mobile:px-1/16 sticky top-0 backdrop-filter backdrop-blur-lg transition ease-in-out duration-200 ${
+    <header className={`w-full z-40 bg-opacity-100 desktop:h-24 mobile:h-[7.5%] flex flex-row mobile:justify-center desktop:justify-between items-center desktop:px-20 mobile:px-1/16 sticky top-0 backdrop-filter backdrop-blur-lg transition ease-in-out duration-200 ${
       animateHeader 
         ? 'shadow-2xl bg-accent bg-opacity-50'
         : 'bg-accent'
@@ -31,7 +31,7 @@ export default function NavbarHeader() {
     >
       <div className='mobile:visible desktop:hidden mobile:w-1/3 mobile:flex'>
         <FiMenu 
-          size={30}
+          size={45}
           className={`transition ease-in-out duration-200 hover:-translate-y-1
           ${
             animateHeader 
@@ -77,7 +77,7 @@ export default function NavbarHeader() {
 
       <div className='flex mobile:w-1/3 justify-center'>
         <a 
-          className={`text-5xl font-osaka font-medium transition ease-linear duration-200
+          className={`desktop:text-5xl mobile:text-6xl font-osaka font-medium transition ease-linear duration-200
             ${
               animateHeader 
                 ? 'text-text hover:text-white'
