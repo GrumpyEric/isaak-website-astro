@@ -1,4 +1,4 @@
-import { FaInstagram, FaYoutube, FaTwitch, FaTwitter } from 'react-icons/fa6'
+import { FaInstagram, FaYoutube, FaTwitch, FaTwitter, FaCalendarPlus } from 'react-icons/fa6'
 import { FiMenu } from 'react-icons/fi'
 import { useState, useEffect } from 'react'
 
@@ -154,9 +154,9 @@ export default function NavbarHeader() {
           `}
           href=''
         >
-          {/* <FaCalendarPlus
+          <FaCalendarPlus
             size={30}
-          ></FaCalendarPlus> */}
+          ></FaCalendarPlus>
           Schedule appointment
         </a>
 
