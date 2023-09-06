@@ -31,7 +31,7 @@ export default function NavbarHeader() {
     >
       <div className='mobile:visible desktop:hidden mobile:w-1/3 mobile:flex'>
         <FiMenu 
-          size={45}
+          size={60}
           className={`transition ease-in-out duration-200 hover:-translate-y-1
           ${
             animateHeader 
@@ -77,7 +77,7 @@ export default function NavbarHeader() {
 
       <div className='flex mobile:w-1/3 justify-center'>
         <a 
-          className={`desktop:text-5xl mobile:text-6xl font-osaka font-medium transition ease-linear duration-200
+          className={`desktop:text-5xl mobile:text-7xl font-osaka font-medium transition ease-linear duration-200
             ${
               animateHeader 
                 ? 'text-text hover:text-white'
