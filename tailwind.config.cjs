@@ -7,6 +7,7 @@ module.exports = {
       screens: {
         mobile: {'max': '1279px'},
         desktop: '1280px',
+        'desktop-lg': '1921px',
       },
 
       height: {

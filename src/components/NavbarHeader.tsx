@@ -23,7 +23,7 @@ export default function NavbarHeader() {
   }, [])
 
   return (
-    <header className={`w-full z-40 bg-opacity-100 desktop:h-24 mobile:h-[7.5%] flex flex-row mobile:justify-center desktop:justify-between items-center desktop:px-20 mobile:px-1/16 sticky top-0 backdrop-filter backdrop-blur-lg transition ease-in-out duration-200 ${
+    <header className={`w-full z-40 bg-opacity-100 desktop:h-[8vb] mobile:h-[7.5%] flex flex-row mobile:justify-center desktop:justify-between items-center desktop:px-20 mobile:px-1/16 sticky top-0 backdrop-filter backdrop-blur-lg transition ease-in-out duration-200 ${
       animateHeader 
         ? 'shadow-2xl bg-accent bg-opacity-50'
         : 'bg-accent'
@@ -31,8 +31,8 @@ export default function NavbarHeader() {
     >
       <div className='mobile:visible desktop:hidden mobile:w-1/3 mobile:flex'>
         <FiMenu 
-          size={60}
-          className={`transition ease-in-out duration-200 hover:-translate-y-1
+          size={'5vb'}
+          className={`transition ease-in-out duration-200 cursor-pointer
           ${
             animateHeader 
               ? 'text-text hover:text-white'
@@ -44,7 +44,7 @@ export default function NavbarHeader() {
 
       <div className='relative flex flex-row gap-5 desktop:w-1/3 mobile:hidden justify-start'>
         <a 
-          className={`text-xl transition ease-in-out duration-200
+          className={`text-[2vb] desktop-lg:text-[1.75vb] transition ease-in-out duration-200
             ${
               animateHeader 
                 ? 'text-text hover:text-white'
@@ -54,7 +54,7 @@ export default function NavbarHeader() {
           href=''>Home
         </a>
         <a 
-          className={`text-xl transition ease-in-out duration-200
+          className={`text-[2vb] desktop-lg:text-[1.75vb] transition ease-in-out duration-200
             ${
               animateHeader 
                 ? 'text-text hover:text-white'
@@ -64,7 +64,7 @@ export default function NavbarHeader() {
           href=''>Blog
         </a>
         <a 
-          className={`text-xl transition ease-in-out duration-200
+          className={`text-[2vb] desktop-lg:text-[1.75vb] transition ease-in-out duration-200
             ${
               animateHeader 
                 ? 'text-text hover:text-white'
@@ -77,7 +77,7 @@ export default function NavbarHeader() {
 
       <div className='flex mobile:w-1/3 justify-center'>
         <a 
-          className={`desktop:text-5xl mobile:text-7xl font-osaka font-medium transition ease-linear duration-200
+          className={`text-[6vb] desktop-lg:text-[5.25vb] font-osaka font-medium transition ease-linear duration-200
             ${
               animateHeader 
                 ? 'text-text hover:text-white'
@@ -88,12 +88,12 @@ export default function NavbarHeader() {
         </a>
       </div>
 
-      <div className='flex flex-row items-center desktop:w-1/3 gap-10 mobile:hidden justify-end'>
-        <div className='flex flex-row gap-5'>
+      <div className='flex flex-row items-center desktop:w-1/3 gap-[5vb] mobile:hidden justify-end'>
+        <div className='flex flex-row gap-[2.5vb]'>
           <a href='https://www.instagram.com/isekku/' target="_blank">
             <FaInstagram 
-              size={30}
-              className={`transition ease-in-out duration-200 hover:-translate-y-1
+              // size={'3vb'}
+              className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
                 ${
                   animateHeader 
                     ? 'text-text hover:text-white'
@@ -105,8 +105,8 @@ export default function NavbarHeader() {
 
           <a href='https://www.youtube.com/channel/UCgmueJwQXSEFmaIpoE5i0-A' target="_blank">
             <FaYoutube 
-              size={30}
-              className={`transition ease-in-out duration-200 hover:-translate-y-1
+              // size={'3vb'}
+              className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
               ${
                 animateHeader 
                   ? 'text-text hover:text-white'
@@ -118,8 +118,8 @@ export default function NavbarHeader() {
 
           <a href='https://www.twitch.tv/isekku' target="_blank">
             <FaTwitch 
-              size={30}
-              className={`transition ease-in-out duration-200 hover:-translate-y-1
+              // size={'3vb'}
+              className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
                 ${
                   animateHeader 
                     ? 'text-text hover:text-white'
@@ -131,8 +131,8 @@ export default function NavbarHeader() {
 
           <a href='https://twitter.com/YTIsekku' target="_blank">
             <FaTwitter 
-              size={30}
-              className={`transition ease-in-out duration-200 hover:-translate-y-1
+              // size={'3vb'}
+              className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
                 ${
                   animateHeader 
                     ? 'text-text hover:text-white'
@@ -145,7 +145,7 @@ export default function NavbarHeader() {
 
         <a
           id='appointment' 
-          className={`text-text text-md whitespace-nowrap flex flex-row items-center gap-2 border-2 rounded-md p-3 transition ease-in-out duration-200
+          className={`text-text text-[2vb] desktop-lg:text-[1.75vb] whitespace-nowrap flex flex-row items-center gap-2 border-2 rounded-md p-[1.25vb] transition ease-in-out duration-200
             ${
               animateHeader 
                 ? 'text-text hover:text-white border-text hover:bg-text'
@@ -155,7 +155,7 @@ export default function NavbarHeader() {
           href=''
         >
           <FaCalendarPlus
-            size={30}
+            className='text-[3vb] desktop-lg:text-[2.625vb]'
           ></FaCalendarPlus>
           Schedule appointment
         </a>
