@@ -3,8 +3,8 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Homepage">
-	<main class="flex flex-1 flex-col">
-		<div class="flex flex-1 relative text-center gap-10">
+	<main class="min-w-full min-h-full">
+		<div class="desktop:h-[calc(100vh-8vb)] mobile:h-[calc(100vh-7.5vb)] relative text-center">
 
 			<p 
 				class="peer absolute bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 font-osaka text-text text-[10vb] font-medium text-opacity-75 transition duration-300 ease-in-out hover:scale-125 hover:text-opacity-100 hover:text-accent hover:animate-pulse mb-6 z-10 cursor-pointer"
@@ -20,31 +20,31 @@ import Layout from '../layouts/Layout.astro';
 				alt="Isekku sitting on a tree" 
 				src="/images/isaak-wide-focused.webp"
 				loading="lazy"
-				class="transition opacity-90 duration-300 ease-in-out peer-hover:opacity-25 object-cover"
+				class="w-full h-full transition opacity-90 duration-300 ease-in-out peer-hover:opacity-25 object-cover"
 			/>
 		</div>
 
-		<div class="container mx-auto px-4">
-			<!-- <div>
-				<p class="text-3xl text-center">Hi, I am Isaak, a.k.a. <b class="text-accent">Isekku</b>!</p>
-				<p class="text-3xl text-center">Welcome to my website, where you can take a look at my life and music.</p>
-			</div> -->
-
-			<!-- <div class="flex flex-row bg-text py-16 gap-8 justify-center">
+		<div class="container mx-auto px-8 py-16">
+			<div class="flex flex-col flex-1 desktop:h-[25vh] mobile:h-[50vh] mobile:gap-10 justify-center items-center">
+				<p class="desktop-lg:text-5xl desktop:text-3xl mobile:text-3xl text-center">Hi, I am Isaak, a.k.a. <b class="text-accent">Isekku</b>!</p>
+				<p class="desktop-lg:text-5xl desktop:text-3xl mobile:text-3xl text-center">Welcome to my website, where you can take a look at my life and music.</p>
+			</div>
+	
+			<div class="flex flex-1 flex-row desktop:h-[75vh] mobile:h-[50vh]">
 				<img
 					alt="Isekku sketch"
 					src="/images/Isekku.webp"
 					width={2048}
 					height={2048}
-					class="w-4/12"
+					class="object-contain"
 				/>
-
-				<div class="text-left self-center w-4/12">
+	
+				<!-- <div class="">
 					<p class="text-primary text-3xl">I do ... and ... </p>
 					<br></br>
 					<p class="text-primary text-3xl">My goal: becoming a full-time artist!</p>
-				</div>
-			</div> -->
+				</div> -->
+			</div>
 		</div>
       
 	</main>

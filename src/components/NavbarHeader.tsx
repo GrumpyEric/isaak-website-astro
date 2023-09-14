@@ -23,7 +23,8 @@ export default function NavbarHeader() {
   }, [])
 
   return (
-    <header className={`w-full z-40 bg-opacity-100 desktop:h-[8vb] mobile:h-[7.5%] flex flex-row mobile:justify-center desktop:justify-between items-center desktop:px-20 mobile:px-1/16 sticky top-0 backdrop-filter backdrop-blur-lg transition ease-in-out duration-200 ${
+    <header className={`w-full z-40 bg-opacity-100 
+     flex flex-row mobile:justify-center desktop:justify-between items-center desktop:px-20 mobile:px-1/16 sticky top-0 backdrop-filter backdrop-blur-lg transition ease-in-out duration-200 ${
       animateHeader 
         ? 'shadow-2xl bg-accent bg-opacity-50'
         : 'bg-accent'
@@ -141,7 +142,7 @@ export default function NavbarHeader() {
 
         <a
           id='appointment' 
-          className={`text-text text-[2vb] desktop-lg:text-[1.75vb] whitespace-nowrap flex flex-row items-center gap-2 border-2 rounded-md p-[1vb] transition ease-in-out duration-200
+          className={`text-text text-[2vb] desktop-lg:text-[1.75vb] whitespace-nowrap flex flex-row items-center gap-2 border-[0.2vb] rounded-[0.6vb] p-[1vb] transition ease-in-out duration-200
             ${
               animateHeader 
                 ? 'text-text hover:text-white border-text hover:bg-text'
