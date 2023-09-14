@@ -31,7 +31,7 @@ export default function NavbarHeader() {
     >
       <div className='mobile:visible desktop:hidden mobile:w-1/3 mobile:flex'>
         <FiMenu 
-          size={'5vb'}
+          size={'4vb'}
           className={`transition ease-in-out duration-200 cursor-pointer
           ${
             animateHeader 
@@ -51,7 +51,7 @@ export default function NavbarHeader() {
                 : 'text-white hover:text-text'
             }
           `} 
-          href=''>Home
+          href='/'>Home
         </a>
         <a 
           className={`text-[2vb] desktop-lg:text-[1.75vb] transition ease-in-out duration-200
@@ -61,7 +61,7 @@ export default function NavbarHeader() {
                 : 'text-white hover:text-text'
             }
           `} 
-          href=''>Blog
+          href='/blog'>Blog
         </a>
         <a 
           className={`text-[2vb] desktop-lg:text-[1.75vb] transition ease-in-out duration-200
@@ -71,7 +71,7 @@ export default function NavbarHeader() {
                 : 'text-white hover:text-text'
             }
           `} 
-          href=''>Shop
+          href='/shop'>Shop
         </a>
       </div>
 
@@ -92,7 +92,6 @@ export default function NavbarHeader() {
         <div className='flex flex-row gap-[2.5vb]'>
           <a href='https://www.instagram.com/isekku/' target="_blank">
             <FaInstagram 
-              // size={'3vb'}
               className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
                 ${
                   animateHeader 
@@ -105,7 +104,6 @@ export default function NavbarHeader() {
 
           <a href='https://www.youtube.com/channel/UCgmueJwQXSEFmaIpoE5i0-A' target="_blank">
             <FaYoutube 
-              // size={'3vb'}
               className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
               ${
                 animateHeader 
@@ -118,7 +116,6 @@ export default function NavbarHeader() {
 
           <a href='https://www.twitch.tv/isekku' target="_blank">
             <FaTwitch 
-              // size={'3vb'}
               className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
                 ${
                   animateHeader 
@@ -131,7 +128,6 @@ export default function NavbarHeader() {
 
           <a href='https://twitter.com/YTIsekku' target="_blank">
             <FaTwitter 
-              // size={'3vb'}
               className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
                 ${
                   animateHeader 
@@ -145,7 +141,7 @@ export default function NavbarHeader() {
 
         <a
           id='appointment' 
-          className={`text-text text-[2vb] desktop-lg:text-[1.75vb] whitespace-nowrap flex flex-row items-center gap-2 border-2 rounded-md p-[1.25vb] transition ease-in-out duration-200
+          className={`text-text text-[2vb] desktop-lg:text-[1.75vb] whitespace-nowrap flex flex-row items-center gap-2 border-2 rounded-md p-[1vb] transition ease-in-out duration-200
             ${
               animateHeader 
                 ? 'text-text hover:text-white border-text hover:bg-text'
