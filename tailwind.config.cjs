@@ -10,6 +10,11 @@ module.exports = {
         'desktop-lg': '1921px',
       },
 
+      flexGrow: {
+        '2': 2,
+        '3': 3,
+      },
+
       height: {
         '1/10': '10%',
       },
