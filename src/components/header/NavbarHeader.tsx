@@ -1,6 +1,11 @@
-import { FaInstagram, FaYoutube, FaTwitch, FaTwitter, FaCalendarPlus } from 'react-icons/fa6'
-import { FiMenu } from 'react-icons/fi'
+import { FaInstagram, FaYoutube, FaTwitch, FaTwitter } from 'react-icons/fa6'
 import { useState, useEffect } from 'react'
+import BurgerMenu from './BurgerMenu'
+import LinkDesktop from './LinkDesktop'
+import HeaderTitle from './HeaderTitle'
+import MakeAppointment from './MakeAppointment'
+import CustomIcon from '../CustomIcon'
+import SocialsLink from './SocialsLink'
 
 export default function NavbarHeader() {
   const [animateHeader, setAnimateHeader] = useState(false)
@@ -24,73 +29,28 @@ export default function NavbarHeader() {
 
   return (
     <header className={`w-full z-40 bg-opacity-100 
-     flex flex-row mobile:justify-center desktop:justify-between items-center desktop:px-20 mobile:px-1/16 sticky top-0 backdrop-filter backdrop-blur-lg transition ease-in-out duration-200 ${
+     flex flex-row mobile:justify-center desktop:justify-between items-center desktop:px-[8vb] mobile:px-1/16 desktop:h-[8vb] mobile:h-[7.5vb] sticky top-0 backdrop-filter backdrop-blur-lg transition ease-in-out duration-200 ${
       animateHeader 
         ? 'shadow-2xl bg-accent bg-opacity-50'
         : 'bg-accent'
       }`}
     >
-      <div className='mobile:visible desktop:hidden mobile:w-1/3 mobile:flex'>
-        <FiMenu 
-          size={'4vb'}
-          className={`transition ease-in-out duration-200 cursor-pointer
-          ${
-            animateHeader 
-              ? 'text-text hover:text-white'
-              : 'text-white hover:text-text'
-          }
-        `}
-        ></FiMenu>
-      </div>
+
+      <BurgerMenu animateHeader={animateHeader}/>
 
       <div className='relative flex flex-row gap-5 desktop:w-1/3 mobile:hidden justify-start'>
-        <a 
-          className={`text-[2vb] desktop-lg:text-[1.75vb] transition ease-in-out duration-200
-            ${
-              animateHeader 
-                ? 'text-text hover:text-white'
-                : 'text-white hover:text-text'
-            }
-          `} 
-          href='/'>Home
-        </a>
-        <a 
-          className={`text-[2vb] desktop-lg:text-[1.75vb] transition ease-in-out duration-200
-            ${
-              animateHeader 
-                ? 'text-text hover:text-white'
-                : 'text-white hover:text-text'
-            }
-          `} 
-          href='/blog'>Blog
-        </a>
-        <a 
-          className={`text-[2vb] desktop-lg:text-[1.75vb] transition ease-in-out duration-200
-            ${
-              animateHeader 
-                ? 'text-text hover:text-white'
-                : 'text-white hover:text-text'
-            }
-          `} 
-          href='/shop'>Shop
-        </a>
+        <LinkDesktop animateHeader={animateHeader} href='/' title='Home'/>
+        <LinkDesktop animateHeader={animateHeader} href='/blog' title='Blog'/>
+        <LinkDesktop animateHeader={animateHeader} href='/shop' title='Shop'/>
       </div>
 
       <div className='flex mobile:w-1/3 justify-center'>
-        <a 
-          className={`text-[6vb] desktop-lg:text-[5.25vb] font-osaka font-medium transition ease-linear duration-200
-            ${
-              animateHeader 
-                ? 'text-text hover:text-white'
-                : 'text-white hover:text-text'
-            }
-          `}
-          href=''>Isekku
-        </a>
+        <HeaderTitle animateHeader={animateHeader}/>
       </div>
 
       <div className='flex flex-row items-center desktop:w-1/3 gap-[5vb] mobile:hidden justify-end'>
         <div className='flex flex-row gap-[2.5vb]'>
+          <SocialsLink href='https://www.instagram.com/isekku/' animateHeader={animateHeader}/>
           <a href='https://www.instagram.com/isekku/' target="_blank">
             <FaInstagram 
               className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
@@ -140,22 +100,7 @@ export default function NavbarHeader() {
           </a>
         </div>
 
-        <a
-          id='appointment' 
-          className={`text-text text-[2vb] desktop-lg:text-[1.75vb] whitespace-nowrap flex flex-row items-center gap-2 border-[0.2vb] rounded-[0.6vb] p-[1vb] transition ease-in-out duration-200
-            ${
-              animateHeader 
-                ? 'text-text hover:text-white border-text hover:bg-text'
-                : 'text-white hover:text-text border-white hover:bg-white'
-            }
-          `}
-          href=''
-        >
-          <FaCalendarPlus
-            className='text-[3vb] desktop-lg:text-[2.625vb]'
-          ></FaCalendarPlus>
-          Schedule appointment
-        </a>
+        <MakeAppointment animateHeader={animateHeader}/>
 
       </div>
 

@@ -4,11 +4,7 @@ export enum IconsEnums {
   Twitch = "FaTwitch",
   Twitter = "FaTwitter",
   Calendar = "FaCalendarPlus",
-}
-
-export interface IconProps {
-  icon: IconsEnums
-  size: number
-  animate: boolean,
-  className?: string
+  BurgerMenu = "BurgerMenu",
+  Message = "FaMessage",
+  Phone = "FaPhone",
 }

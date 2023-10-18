@@ -1,5 +1,5 @@
 --- 
-import NavbarHeader from '../components/NavbarHeader';
+import NavbarHeader from '../components/header/NavbarHeader';
 import Footer from '../components/Footer';
 import { colors } from '../components/constants/colors';
 
@@ -34,6 +34,12 @@ const accentColor = colors.accent
 		color: var(--textColor);
 		background: var(--backgroundColor);
 	}
+
+	html, body {
+		height: 100%;
+		margin: 0;
+	}
+
 	@font-face {
 		font-family: 'Osaka';
 		src: url('/fonts/osaka-re.ttf');
@@ -42,3 +48,4 @@ const accentColor = colors.accent
 		font-display: swap;
 	}
 </style>
+../components/header/NavbarHeader
