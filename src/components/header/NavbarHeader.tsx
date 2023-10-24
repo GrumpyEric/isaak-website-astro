@@ -1,4 +1,4 @@
-import { FaInstagram, FaYoutube, FaTwitch, FaTwitter } from 'react-icons/fa6'
+import { FaInstagram, FaYoutube, FaTwitch, FaTwitter, FaSpotify } from 'react-icons/fa6'
 import { useState, useEffect } from 'react'
 import BurgerMenu from './BurgerMenu'
 import LinkDesktop from './LinkDesktop'
@@ -50,7 +50,19 @@ export default function NavbarHeader() {
 
       <div className='flex flex-row items-center desktop:w-1/3 gap-[5vb] mobile:hidden justify-end'>
         <div className='flex flex-row gap-[2.5vb]'>
-          <SocialsLink href='https://www.instagram.com/isekku/' animateHeader={animateHeader}/>
+
+          {/* <SocialsLink href='https://www.instagram.com/isekku/' animateHeader={animateHeader}/> */}
+          <a href='https://open.spotify.com/intl-de/artist/3L8Rwqoo75Sx8LtX4QPyxz?si=REGwxvCpRt6OlwuGCn3zNw' target="_blank">
+            <FaSpotify 
+              className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
+                ${
+                  animateHeader 
+                    ? 'text-text hover:text-white'
+                    : 'text-white hover:text-text'
+                }
+              `}
+            ></FaSpotify>
+          </a>
           <a href='https://www.instagram.com/isekku/' target="_blank">
             <FaInstagram 
               className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]

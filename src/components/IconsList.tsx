@@ -6,7 +6,7 @@ type Props = {
 
 function IconsList({}: Props) {
   return (
-    
+    null
   )
 }
 
