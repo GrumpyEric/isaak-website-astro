@@ -1,4 +1,4 @@
-import { FaInstagram, FaYoutube, FaTwitch, FaTwitter, FaSpotify } from 'react-icons/fa6'
+import { FaInstagram, FaYoutube, FaTwitch, FaTwitter, FaSpotify, FaShop, FaHouse, FaPatreon } from 'react-icons/fa6'
 import { useState, useEffect } from 'react'
 import BurgerMenu from './BurgerMenu'
 import LinkDesktop from './LinkDesktop'
@@ -28,8 +28,8 @@ export default function NavbarHeader() {
   }, [])
 
   return (
-    <header className={`w-full z-40 bg-opacity-100 
-     flex flex-row mobile:justify-center desktop:justify-between items-center desktop:px-[8vb] mobile:px-1/16 desktop:h-[8vb] mobile:h-[7.5vb] sticky top-0 backdrop-filter backdrop-blur-lg transition ease-in-out duration-200 ${
+    <header className={`w-full z-40 bg-opacity-100 sticky top-0
+      flex flex-row mobile:justify-center desktop:justify-between items-center desktop:px-[8vb] mobile:px-1/16 desktop:h-[8vb] mobile:h-[7.5vb] backdrop-filter backdrop-blur-lg transition ease-in-out duration-200 ${
       animateHeader 
         ? 'shadow-2xl bg-accent bg-opacity-50'
         : 'bg-accent'
@@ -39,9 +39,15 @@ export default function NavbarHeader() {
       <BurgerMenu animateHeader={animateHeader}/>
 
       <div className='relative flex flex-row gap-5 desktop:w-1/3 mobile:hidden justify-start'>
-        <LinkDesktop animateHeader={animateHeader} href='/' title='Home'/>
-        <LinkDesktop animateHeader={animateHeader} href='/blog' title='Blog'/>
-        <LinkDesktop animateHeader={animateHeader} href='/shop' title='Shop'/>
+        <div className='flex gap-2 items-center'>
+          <FaHouse className='text-xl text-white'/>
+          <LinkDesktop animateHeader={animateHeader} href='/' title='Home'/>
+        </div>
+
+        <div className='flex gap-2 items-center'>
+          <FaShop className='text-xl text-white'/>
+          <LinkDesktop animateHeader={animateHeader} href='/shop' title='Shop'/>
+        </div>
       </div>
 
       <div className='flex mobile:w-1/3 justify-center'>
@@ -63,6 +69,19 @@ export default function NavbarHeader() {
               `}
             ></FaSpotify>
           </a>
+
+          <a href='' target="_blank">
+            <FaPatreon 
+              className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
+                ${
+                  animateHeader 
+                    ? 'text-text hover:text-white'
+                    : 'text-white hover:text-text'
+                }
+              `}
+            ></FaPatreon>
+          </a>
+
           <a href='https://www.instagram.com/isekku/' target="_blank">
             <FaInstagram 
               className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]

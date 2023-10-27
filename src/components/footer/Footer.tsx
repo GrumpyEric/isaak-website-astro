@@ -1,4 +1,4 @@
-import { FaMessage, FaPhone, FaInstagram, FaYoutube, FaTwitch, FaTwitter, FaSpotify } from "react-icons/fa6"
+import { FaMessage, FaPhone, FaInstagram, FaYoutube, FaTwitch, FaTwitter, FaSpotify, FaPatreon } from "react-icons/fa6"
 
 export default function Footer() {
   return (
@@ -10,7 +10,7 @@ export default function Footer() {
             Isekku
           </p> 
           <p className="desktop:text-xl mobile:text-xs">
-            Copyright © 2023 Isaak Michailoglu
+            Copyright © 2023 Isaak Michailoglou
           </p>
         </div>
 
@@ -31,6 +31,12 @@ export default function Footer() {
           <li>
             <a href="https://open.spotify.com/intl-de/artist/3L8Rwqoo75Sx8LtX4QPyxz?si=REGwxvCpRt6OlwuGCn3zNw" target="_blank" className="transition ease-in-out duration-200 hover:text-black flex flex-1 flex-row gap-2 justify-center items-center">
               <FaSpotify></FaSpotify>
+            </a>
+          </li>
+
+          <li>
+            <a href="" target="_blank" className="transition ease-in-out duration-200 hover:text-black flex flex-1 flex-row gap-2 justify-center items-center">
+              <FaPatreon></FaPatreon>
             </a>
           </li>
 

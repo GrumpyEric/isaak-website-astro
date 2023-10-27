@@ -25,7 +25,7 @@ const accentColor = colors.accent
 	</head>
 	<body>
 		<NavbarHeader client:load/>
-		<slot />
+		<slot/>
 		<Footer client:load/>
 	</body>
 </html>
@@ -38,6 +38,10 @@ const accentColor = colors.accent
 	html, body {
 		height: 100%;
 		margin: 0;
+	}
+
+	body {
+		height: fit-content;
 	}
 
 	@font-face {
