@@ -1,55 +1,55 @@
---- 
-import NavbarHeader from '../components/header/NavbarHeader';
-import Footer from '../components/footer/Footer';
-import { colors } from '../components/constants/colors';
+---
+import NavbarHeader from "@/components/header/NavbarHeader";
+import { Footer } from "@/components/footer/Footer";
+import { colors } from "@/components/constants/colors";
 
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
-const backgroundColor = colors.background
-const textColor = colors.text
-const accentColor = colors.accent
+const backgroundColor = colors.background;
+const textColor = colors.text;
+const accentColor = colors.accent;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Website of Isekku">
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<NavbarHeader client:load/>
-		<slot/>
-		<Footer client:load/>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Website of Isekku" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <NavbarHeader client:load />
+    <slot />
+    <Footer client:load />
+  </body>
 </html>
 <style is:global define:vars={{ backgroundColor, textColor, accentColor }}>
-	html {
-		color: var(--textColor);
-		background: var(--backgroundColor);
-	}
+  html {
+    color: var(--textColor);
+    background: var(--backgroundColor);
+  }
 
-	html, body {
-		height: 100%;
-		margin: 0;
-	}
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+  }
 
-	body {
-		height: fit-content;
-	}
+  body {
+    height: fit-content;
+  }
 
-	@font-face {
-		font-family: 'Osaka';
-		src: url('/fonts/osaka-re.ttf');
-		font-weight: normal;
-		font-style: normal;
-		font-display: swap;
-	}
-
+  @font-face {
+    font-family: "Osaka";
+    src: url("/fonts/osaka-re.ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
 </style>

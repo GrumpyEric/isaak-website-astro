@@ -1,20 +1,20 @@
 type Props = {
-  animateHeader: boolean
-}
+  animateHeader: boolean;
+};
 
-function HeaderTitle({ animateHeader }: Props) {
+export function HeaderTitle({ animateHeader }: Props) {
   return (
-    <a 
+    <a
       className={`text-[6vb] desktop-lg:text-[5.25vb] font-osaka font-medium transition ease-linear duration-200
         ${
-          animateHeader 
-            ? 'text-text hover:text-white'
-            : 'text-white hover:text-text'
+          animateHeader
+            ? "text-text hover:text-white"
+            : "text-white hover:text-text"
         }
       `}
-      href='/'>Isekku
+      href="/"
+    >
+      Isekku
     </a>
-  )
+  );
 }
-
-export default HeaderTitle

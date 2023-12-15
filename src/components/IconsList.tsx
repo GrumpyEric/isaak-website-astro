@@ -1,13 +1,11 @@
-import { IconsEnums } from "./constants/enums/iconEnums"
+import { IconsEnums } from "./constants/enums/iconEnums";
 
 type Props = {
-  icon: IconsEnums
-}
+  icon: IconsEnums;
+};
 
 function IconsList({}: Props) {
-  return (
-    null
-  )
+  return null;
 }
 
-export default IconsList
+export default IconsList;

@@ -1,22 +1,22 @@
 type Props = {
-  animateHeader: boolean
-  href: string
-  title: string
-}
+  animateHeader: boolean;
+  href: string;
+  title: string;
+};
 
-function LinkDesktop({ animateHeader, href, title }: Props) {
+export function LinkDesktop({ animateHeader, href, title }: Props) {
   return (
-    <a 
+    <a
       className={`text-[2vb] desktop-lg:text-[1.75vb] transition ease-in-out duration-200
         ${
-          animateHeader 
-            ? 'text-text hover:text-white'
-            : 'text-white hover:text-text'
+          animateHeader
+            ? "text-text hover:text-white"
+            : "text-white hover:text-text"
         }
-      `} 
-      href={href}>{title}
+      `}
+      href={href}
+    >
+      {title}
     </a>
-  )
+  );
 }
-
-export default LinkDesktop
