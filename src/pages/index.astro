@@ -1,51 +1,72 @@
 ---
-import Layout from '@/layouts/Layout.astro';
+import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout title="Homepage">
-	<main>
-		<div class="desktop-lg:h-[calc(100vh-8vb)] desktop:h-[calc(100vh-8vb)] mobile:h-[calc(100vh-7.5vb)] relative text-center">
+  <main>
+    <div
+      class="desktop-lg:h-[calc(100dvh-8vb)] desktop:h-[calc(100dvh-8vb)] mobile:h-[calc(100svh-7.5vb)] relative text-center"
+    >
+      <p
+        class="peer absolute bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 font-osaka text-text text-[10vb] font-medium text-opacity-75 transition duration-300 ease-in-out hover:scale-125 hover:text-opacity-100 hover:text-accent hover:animate-pulse mb-6 z-10 cursor-pointer"
+      >
+        Isekku
+      </p>
 
-			<p 
-				class="peer absolute bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 font-osaka text-text text-[10vb] font-medium text-opacity-75 transition duration-300 ease-in-out hover:scale-125 hover:text-opacity-100 hover:text-accent hover:animate-pulse mb-6 z-10 cursor-pointer"
-			>
-				Isekku
-			</p>
+      <p
+        class="absolute whitespace-nowrap bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 mobile:pt-[10vb] desktop:pt-[12vb] desktop-lg:pt-[14vb] text-text text-[4vb] font-medium invisible transition duration-300 ease-in-out peer-hover:visible"
+      >
+        Music and Lifestyle
+      </p>
 
-			<p class="absolute whitespace-nowrap bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 mobile:pt-[10vb] desktop:pt-[12vb] desktop-lg:pt-[14vb] text-text text-[4vb] font-medium invisible transition duration-300 ease-in-out peer-hover:visible">
-				Music and Lifestyle 
-			</p>
+      <img
+        alt="Isekku sitting on a tree"
+        src="/images/isaak-wide-focused.webp"
+        loading="lazy"
+        class="w-full h-full transition opacity-90 duration-300 ease-in-out peer-hover:opacity-25 object-cover"
+      />
+    </div>
 
-			<img 
-				alt="Isekku sitting on a tree" 
-				src="/images/isaak-wide-focused.webp"
-				loading="lazy"
-				class="w-full h-full transition opacity-90 duration-300 ease-in-out peer-hover:opacity-25 object-cover"
-			/>
-		</div>
+    <div class="container mx-auto px-8 py-16">
+      <div
+        class="flex flex-col flex-1 desktop:h-[25dvh] mobile:h-[50svh] mobile:gap-10 justify-center items-center"
+      >
+        <p
+          class="desktop-lg:text-5xl desktop:text-3xl mobile:text-3xl text-center"
+        >
+          Hi, I am Isaak, a.k.a. <b class="text-accent">Isekku</b>!
+        </p>
+        <p
+          class="desktop-lg:text-5xl desktop:text-3xl mobile:text-3xl text-center"
+        >
+          Welcome to my website, where you can take a look at my life and music.
+        </p>
+      </div>
 
-		<div class="container mx-auto px-8 py-16">
-			<div class="flex flex-col flex-1 desktop:h-[25vh] mobile:h-[50vh] mobile:gap-10 justify-center items-center">
-				<p class="desktop-lg:text-5xl desktop:text-3xl mobile:text-3xl text-center">Hi, I am Isaak, a.k.a. <b class="text-accent">Isekku</b>!</p>
-				<p class="desktop-lg:text-5xl desktop:text-3xl mobile:text-3xl text-center">Welcome to my website, where you can take a look at my life and music.</p>
-			</div>
-	
-			<div class="flex flex-1 flex-row desktop:h-[75vh] mobile:h-[50vh]">
-				<img
-					alt="Isekku sketch"
-					src="/images/Isekku.webp"
-					width={2048}
-					height={2048}
-					class="object-contain"
-				/>
-			</div>
+      <div class="flex flex-1 flex-row desktop:h-[75dvh] mobile:h-[50svh]">
+        <img
+          alt="Isekku sketch"
+          src="/images/Isekku.webp"
+          width={2048}
+          height={2048}
+          class="object-contain"
+        />
+      </div>
 
-			<div class="flex flex-col flex-1 desktop:h-[25vh] mobile:h-[50vh] mobile:gap-10 justify-center items-center">
-				<p class="desktop-lg:text-5xl desktop:text-3xl mobile:text-3xl text-center">I do music and social media. </p>
-				<p class="desktop-lg:text-5xl desktop:text-3xl mobile:text-3xl text-center">My goal: becoming a full-time artist!</p>
-			</div>
-
-		</div>
-      
-	</main>
+      <div
+        class="flex flex-col flex-1 desktop:h-[25dvh] mobile:h-[50svh] mobile:gap-10 justify-center items-center"
+      >
+        <p
+          class="desktop-lg:text-5xl desktop:text-3xl mobile:text-3xl text-center"
+        >
+          I do music and social media.
+        </p>
+        <p
+          class="desktop-lg:text-5xl desktop:text-3xl mobile:text-3xl text-center"
+        >
+          My goal: becoming a full-time artist!
+        </p>
+      </div>
+    </div>
+  </main>
 </Layout>
