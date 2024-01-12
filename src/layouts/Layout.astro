@@ -1,7 +1,9 @@
 ---
-import NavbarHeader from "@/components/header/NavbarHeader";
-import { Footer } from "@/components/footer/Footer";
+import NavbarHeader from "@/components/NavbarHeader";
+import { Footer } from "@/components/Footer";
 import { colors } from "@/components/constants/colors";
+import { MobileDrawer } from "@/components/MobileDrawer";
+import { Drawer, Fab, SwipeableDrawer } from "@mui/material";
 
 interface Props {
   title: string;
@@ -18,13 +20,14 @@ const accentColor = colors.accent;
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Website of Isekku" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
   <body>
     <NavbarHeader client:load />
+    <MobileDrawer client:load />
     <slot />
     <Footer client:load />
   </body>
@@ -37,12 +40,10 @@ const accentColor = colors.accent;
 
   html,
   body {
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     margin: 0;
-  }
-
-  body {
-    height: fit-content;
+    overflow: auto;
   }
 
   @font-face {
