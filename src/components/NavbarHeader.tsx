@@ -11,9 +11,9 @@ import {
 import { useState, useEffect } from "react";
 import { Button, IconButton } from "@mui/material";
 import { Home, MoreTime, Store } from "@mui/icons-material";
-import { colors } from "./constants/colors";
+import { colors } from "@/components/constants/colors";
 
-export default function NavbarHeader() {
+export function NavbarHeader() {
   const [animateHeader, setAnimateHeader] = useState(false);
 
   useEffect(() => {
