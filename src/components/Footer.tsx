@@ -1,3 +1,4 @@
+import { getYear } from "date-fns";
 import {
   FaMessage,
   FaPhone,
@@ -9,6 +10,10 @@ import {
   FaPatreon,
 } from "react-icons/fa6";
 
+const time = new Date();
+const currentYear = getYear(time);
+console.log(currentYear);
+
 export function Footer() {
   return (
     <footer className="bg-accent w-full desktop:py-10 mobile:py-1/16 desktop:px-20 mobile:px-1/16 bottom-0">
@@ -18,7 +23,9 @@ export function Footer() {
             Isekku
           </p>
           <p className="desktop:text-xl mobile:text-xs">
-            Copyright © 2023 Isaak Michailoglou
+            {"Copyright © "}
+            {currentYear}
+            {" Isaak Michailoglou"}
           </p>
         </div>
 
