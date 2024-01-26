@@ -12,7 +12,6 @@ import {
 
 const time = new Date();
 const currentYear = getYear(time);
-console.log(currentYear);
 
 export function Footer() {
   return (
