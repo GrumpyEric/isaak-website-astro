@@ -9,9 +9,6 @@ import {
   FaPatreon,
 } from "react-icons/fa6";
 import { useState, useEffect } from "react";
-import { Button, IconButton } from "@mui/material";
-import { Home, MoreTime, Store } from "@mui/icons-material";
-import { colors } from "@/components/constants/colors";
 
 export function NavbarHeader() {
   const [animateHeader, setAnimateHeader] = useState(false);
@@ -41,10 +38,11 @@ export function NavbarHeader() {
     >
       <div className="flex flex-row gap-5 mobile:hidden justify-start desktop:w-[40%]">
         <div className="flex gap-2 items-center">
-          <Button
+          {/* <a
             // nav buttons
-            variant="text"
-            startIcon={<Home />}
+            // variant="text"
+            // startIcon={<Home />}
+            href="/"
             className={`text-[2vb] desktop-lg:text-[1.75vb] transition ease-in-out duration-200
             ${
               animateHeader
@@ -53,13 +51,14 @@ export function NavbarHeader() {
             }`}
           >
             Home
-          </Button>
+          </a> */}
         </div>
 
         <div className="flex gap-2 items-center">
-          <Button
-            variant="text"
-            startIcon={<Store />}
+          {/* <a
+            // variant="text"
+            // startIcon={<Store />}
+            href="shop"
             className={`text-[2vb] desktop-lg:text-[1.75vb] transition ease-in-out duration-200
             ${
               animateHeader
@@ -68,12 +67,12 @@ export function NavbarHeader() {
             }`}
           >
             Shop
-          </Button>
+          </a> */}
         </div>
       </div>
 
       <div className="flex justify-center desktop:w-[20%]">
-        <Button
+        <a
           // header title
           className={`text-[6vb] desktop-lg:text-[5.25vb] font-osaka font-medium transition ease-linear duration-200
             ${
@@ -84,12 +83,12 @@ export function NavbarHeader() {
           href="/"
         >
           Isekku
-        </Button>
+        </a>
       </div>
 
       <div className="flex flex-row items-center gap-[5vb] mobile:hidden justify-end desktop:w-[40%]">
-        <div className="flex flex-row gap-[1vb]">
-          <IconButton
+        <div className="flex flex-row gap-[2vb]">
+          <a
             // social icons
             className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
                 ${
@@ -102,9 +101,9 @@ export function NavbarHeader() {
             target="_blank"
           >
             <FaSpotify />
-          </IconButton>
+          </a>
 
-          <IconButton
+          <a
             className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
                 ${
                   animateHeader
@@ -116,9 +115,9 @@ export function NavbarHeader() {
             target="_blank"
           >
             <FaPatreon />
-          </IconButton>
+          </a>
 
-          <IconButton
+          <a
             className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
                 ${
                   animateHeader
@@ -130,9 +129,9 @@ export function NavbarHeader() {
             target="_blank"
           >
             <FaInstagram />
-          </IconButton>
+          </a>
 
-          <IconButton
+          <a
             className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
                 ${
                   animateHeader
@@ -144,9 +143,9 @@ export function NavbarHeader() {
             target="_blank"
           >
             <FaYoutube />
-          </IconButton>
+          </a>
 
-          <IconButton
+          <a
             className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
                 ${
                   animateHeader
@@ -158,9 +157,9 @@ export function NavbarHeader() {
             target="_blank"
           >
             <FaTwitch />
-          </IconButton>
+          </a>
 
-          <IconButton
+          <a
             className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
                 ${
                   animateHeader
@@ -172,28 +171,24 @@ export function NavbarHeader() {
             target="_blank"
           >
             <FaTwitter />
-          </IconButton>
+          </a>
         </div>
 
-        <Button
+        <a
           // appointment button
-          variant="outlined"
-          size="medium"
+          // variant="outlined"
+          // size="medium"
           className={`transition ease-in-out duration-200
           ${
             animateHeader
               ? "text-text hover:text-white border-text hover:bg-text"
               : "text-white hover:text-text border-white hover:bg-white"
           }`}
-          startIcon={<MoreTime />}
+          // startIcon={<MoreTime />}
           href=""
-          sx={{
-            padding: 1,
-            ":hover": { borderColor: animateHeader ? colors.text : "white" },
-          }}
         >
           Schedule appointment
-        </Button>
+        </a>
       </div>
     </header>
   );
