@@ -1,5 +1,4 @@
 import React from "react";
-import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 
 export const MobileDrawer = () => {
   const [openDrawer, setOpenDrawer] = React.useState(false);
@@ -12,14 +11,14 @@ export const MobileDrawer = () => {
       >
         Menu
       </button>
-      <SwipeableDrawer
+      {/* <SwipeableDrawer
         anchor="left"
         open={openDrawer}
         onOpen={() => setOpenDrawer(false)}
         onClose={() => setOpenDrawer(false)}
       >
         hello
-      </SwipeableDrawer>
+      </SwipeableDrawer> */}
     </React.Fragment>
   );
 };
