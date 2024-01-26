@@ -4,9 +4,10 @@ import {
   FaTwitch,
   FaTwitter,
   FaSpotify,
+  FaPatreon,
   FaShop,
   FaHouse,
-  FaPatreon,
+  FaCalendarPlus,
 } from "react-icons/fa6";
 import { useState, useEffect } from "react";
 
@@ -176,17 +177,15 @@ export function NavbarHeader() {
 
         <a
           // appointment button
-          // variant="outlined"
-          // size="medium"
-          className={`transition ease-in-out duration-200
+          className={`flex items-center gap-2 border-2 rounded-md p-2 transition ease-in-out duration-200 text-[2vb] desktop-lg:text-[1.75vb]
           ${
             animateHeader
               ? "text-text hover:text-white border-text hover:bg-text"
               : "text-white hover:text-text border-white hover:bg-white"
           }`}
-          // startIcon={<MoreTime />}
           href=""
         >
+          <FaCalendarPlus />
           Schedule appointment
         </a>
       </div>
