@@ -8,7 +8,7 @@ export default defineConfig({
   integrations: [react(), tailwind()],
   vite: {
     ssr: {
-      noExternal: ["react-icons"],
+      noExternal: ["react-icons", "@mui/material"],
     },
   },
 });

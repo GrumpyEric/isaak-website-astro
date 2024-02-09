@@ -25,7 +25,7 @@ const accentColor = colors.accent;
     <title>{title}</title>
   </head>
   <body>
-    <MobileDrawer client:load />
+    <MobileDrawer client:only="react" />
     <NavbarHeader client:load />
     <slot />
     <Footer client:load />
