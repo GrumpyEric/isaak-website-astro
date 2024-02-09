@@ -38,8 +38,8 @@ export function NavbarHeader() {
       }`}
     >
       <div className="flex flex-row gap-5 mobile:hidden justify-start desktop:w-[40%]">
-        <div className="flex gap-2 items-center">
-          {/* <a
+        {/* <div className="flex gap-2 items-center">
+          <a
             // nav buttons
             // variant="text"
             // startIcon={<Home />}
@@ -52,11 +52,11 @@ export function NavbarHeader() {
             }`}
           >
             Home
-          </a> */}
+          </a>
         </div>
 
         <div className="flex gap-2 items-center">
-          {/* <a
+          <a
             // variant="text"
             // startIcon={<Store />}
             href="shop"
@@ -68,8 +68,8 @@ export function NavbarHeader() {
             }`}
           >
             Shop
-          </a> */}
-        </div>
+          </a>
+        </div> */}
       </div>
 
       <div className="flex justify-center desktop:w-[20%]">
