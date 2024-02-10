@@ -1,4 +1,5 @@
-import { SwipeableDrawer } from "@mui/material";
+import { Cancel } from "@mui/icons-material";
+import { Button, IconButton, SwipeableDrawer } from "@mui/material";
 import React from "react";
 import {
   FaBars,
@@ -29,23 +30,33 @@ export const MobileDrawer = () => {
         onOpen={() => setOpenDrawer(true)}
         onClose={() => setOpenDrawer(false)}
       >
-        <div className="flex flex-col bg-accent items-center py-[5%] gap-4">
-          <a
-            href="/"
-            className="text-[2vb] text-white desktop-lg:text-[1.75vb] transition ease-in-out duration-200
-            "
+        <div className="flex flex-col bg-accent items-center py-[5%] px-[5%] gap-4">
+          <Button
+            aria-label="close"
+            className="self-end"
+            variant="contained"
+            color="error"
+            endIcon={<Cancel />}
+            onClick={() => setOpenDrawer(false)}
           >
-            Home
-          </a>
-
-          <a
-            href="shop"
-            className="text-[2vb] text-white desktop-lg:text-[1.75vb] transition ease-in-out duration-200
+            Close
+          </Button>
+          <div className="flex flex-col items-center pb-8 gap-4">
+            {/* <a
+              href="/"
+              className="text-[2vb] text-white desktop-lg:text-[1.75vb] transition ease-in-out duration-200
             "
-          >
-            Shop
-          </a>
-
+            >
+              Home
+            </a> */}
+            {/* <a
+              href="shop"
+              className="text-[2vb] text-white desktop-lg:text-[1.75vb] transition ease-in-out duration-200
+            "
+            >
+              Shop
+            </a> */}
+          </div>
           <div className="flex flex-row gap-[6vb]">
             <a
               // social icons
