@@ -1,5 +1,5 @@
 import { Cancel } from "@mui/icons-material";
-import { Button, IconButton, SwipeableDrawer } from "@mui/material";
+import { Button, SwipeableDrawer } from "@mui/material";
 import React from "react";
 import {
   FaBars,
@@ -18,10 +18,10 @@ export const MobileDrawer = () => {
     <>
       {!openDrawer ? (
         <button
-          className="fixed z-10 desktop:hidden bottom-[7.5%] right-[7.5%] bg-white focus:opacity-75 w-[7.5svh] h-[7.5svh] rounded-[50%]"
+          className="fixed z-10 desktop:hidden bottom-[7.5%] right-[7.5%] bg-white focus:opacity-75 w-[6.25svh] h-[6.25svh] rounded-[50%]"
           onClick={() => setOpenDrawer(true)}
         >
-          <FaBars className="m-auto w-[2.5svh] h-[2.5svh]" />
+          <FaBars className="m-auto w-[2svh] h-[2svh]" />
         </button>
       ) : null}
       <SwipeableDrawer
