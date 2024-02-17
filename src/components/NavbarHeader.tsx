@@ -8,10 +8,11 @@ import {
   FaShop,
   FaHouse,
   FaCalendarPlus,
+  FaHammer,
 } from "react-icons/fa6";
 import { useState, useEffect } from "react";
 
-export function NavbarHeader() {
+export const NavbarHeader = () => {
   const [animateHeader, setAnimateHeader] = useState(false);
 
   useEffect(() => {
@@ -23,6 +24,8 @@ export function NavbarHeader() {
       }
     };
 
+    console.log(window.scrollY);
+
     window.addEventListener("scroll", listener);
 
     return () => {
@@ -32,12 +35,19 @@ export function NavbarHeader() {
 
   return (
     <header
-      className={`w-full z-40 bg-opacity-100 sticky top-0 grid-cols-3
-      flex flex-row mobile:justify-center desktop:justify-between items-center desktop:px-[6vb] mobile:px-1/16 desktop:h-[8vb] mobile:h-[7.5vb] backdrop-filter backdrop-blur-lg transition ease-in-out duration-200 ${
+      className={`w-full z-40 bg-opacity-100 fixed top-0 grid-cols-3 flex flex-row mobile:justify-center desktop:justify-between items-center desktop:px-[6vb] mobile:px-1/16 desktop:h-[8vb] mobile:h-[7.5vb] 
+      backdrop-filter backdrop-blur-lg transition ease-in-out duration-200 ${
         animateHeader ? "shadow-2xl bg-accent bg-opacity-50" : "bg-accent"
       }`}
     >
       <div className="flex flex-row gap-5 mobile:hidden justify-start desktop:w-[40%]">
+        <p
+          className={`flex justify-center items-center gap-4 text-[2vb] desktop-lg:text-[1.75vb] transition ease-in-out duration-200
+            ${animateHeader ? "text-text" : "text-white"}`}
+        >
+          <FaHammer />
+          Site under construction
+        </p>
         {/* <div className="flex gap-2 items-center">
           <a
             // nav buttons
@@ -191,4 +201,4 @@ export function NavbarHeader() {
       </div>
     </header>
   );
-}
+};
