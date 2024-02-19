@@ -102,11 +102,11 @@ export const IndexPage = () => {
   return (
     <main>
       <div className="desktop:h-[calc(100dvh-8vb)] mobile:h-[calc(100svh-7.5vb)] desktop:top-[8vb] mobile:top-[7.5vb] desktop:mb-[8vb] mobile:mb-[7.5vb] relative text-center titleimage">
-        <p className="peer absolute bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 font-osaka text-text text-[10vb] font-medium text-opacity-75 transition duration-300 ease-in-out hover:scale-125 hover:text-opacity-100 hover:text-accent hover:animate-pulse mb-6 z-10 cursor-pointer title">
+        <p className="peer absolute bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 font-osaka text-text text-[8vb] font-medium text-opacity-75 transition duration-300 ease-in-out hover:scale-125 hover:text-opacity-100 hover:text-accent hover:animate-pulse mb-6 z-10 cursor-pointer title">
           Isekku
         </p>
 
-        <p className="absolute whitespace-nowrap bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 mobile:pt-[10vb] desktop:pt-[12vb] desktop-lg:pt-[14vb] text-text text-[4vb] font-medium invisible transition duration-300 ease-in-out peer-hover:visible title">
+        <p className="absolute whitespace-nowrap bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 mobile:pt-[8vb] desktop:pt-[10vb] desktop-lg:pt-[10vb] text-text text-[3vb] font-medium invisible transition duration-300 ease-in-out peer-hover:visible title">
           Music and Lifestyle
         </p>
 

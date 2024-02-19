@@ -42,7 +42,7 @@ export const NavbarHeader = () => {
     >
       <div className="flex flex-row gap-5 mobile:hidden justify-start desktop:w-[40%]">
         <p
-          className={`flex justify-center items-center gap-4 text-[2vb] desktop-lg:text-[1.75vb] transition ease-in-out duration-200
+          className={`flex justify-center items-center gap-4 text-[1.6vb] desktop-lg:text-[1.5vb] transition ease-in-out duration-200
             ${animateHeader ? "text-text" : "text-white"}`}
         >
           <FaHammer />
@@ -85,7 +85,7 @@ export const NavbarHeader = () => {
       <div className="flex justify-center desktop:w-[20%]">
         <a
           // header title
-          className={`text-[6vb] desktop-lg:text-[5.25vb] font-osaka font-medium transition ease-linear duration-200
+          className={`text-[5vb] desktop-lg:text-[4.5vb] font-osaka font-medium transition ease-linear duration-200
             ${
               animateHeader
                 ? "text-text hover:text-white"
@@ -98,10 +98,10 @@ export const NavbarHeader = () => {
       </div>
 
       <div className="flex flex-row items-center gap-[5vb] mobile:hidden justify-end desktop:w-[40%]">
-        <div className="flex flex-row gap-[2vb]">
+        <div className="flex flex-row flex-wrap gap-[1vb]">
           <a
             // social icons
-            className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
+            className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.5vb] p-[0.5vb] 
                 ${
                   animateHeader
                     ? "text-text hover:text-white"
@@ -115,7 +115,7 @@ export const NavbarHeader = () => {
           </a>
 
           <a
-            className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
+            className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.5vb] p-[0.5vb] 
                 ${
                   animateHeader
                     ? "text-text hover:text-white"
@@ -129,7 +129,7 @@ export const NavbarHeader = () => {
           </a>
 
           <a
-            className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
+            className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.5vb] p-[0.5vb] 
                 ${
                   animateHeader
                     ? "text-text hover:text-white"
@@ -143,7 +143,7 @@ export const NavbarHeader = () => {
           </a>
 
           <a
-            className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
+            className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.5vb] p-[0.5vb] 
                 ${
                   animateHeader
                     ? "text-text hover:text-white"
@@ -157,7 +157,7 @@ export const NavbarHeader = () => {
           </a>
 
           <a
-            className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
+            className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.5vb] p-[0.5vb] 
                 ${
                   animateHeader
                     ? "text-text hover:text-white"
@@ -171,7 +171,7 @@ export const NavbarHeader = () => {
           </a>
 
           <a
-            className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.625vb]
+            className={`transition ease-in-out duration-200 hover:-translate-y-1 text-[3vb] desktop-lg:text-[2.5vb] p-[0.5vb] 
                 ${
                   animateHeader
                     ? "text-text hover:text-white"
@@ -187,7 +187,7 @@ export const NavbarHeader = () => {
 
         <a
           // appointment button
-          className={`flex items-center gap-2 border-2 rounded-md p-2 transition ease-in-out duration-200 text-[2vb] desktop-lg:text-[1.75vb]
+          className={`flex items-center gap-2 border-2 rounded-md p-2 transition ease-in-out duration-200 text-[1.75vb] desktop-lg:text-[1.5vb]
           ${
             animateHeader
               ? "text-text hover:text-white border-text hover:bg-text"

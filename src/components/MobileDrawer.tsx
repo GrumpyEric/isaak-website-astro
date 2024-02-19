@@ -57,10 +57,10 @@ export const MobileDrawer = () => {
               Shop
             </a> */}
           </div>
-          <div className="flex flex-row gap-[6vb]">
+          <div className="flex flex-row flex-wrap gap-[4.5vb]">
             <a
               // social icons
-              className="text-white text-[3vb] desktop-lg:text-[2.625vb]"
+              className="text-white text-[3vb] desktop-lg:text-[2.625vb] flex-grow-0 flex-shrink-0 basis-[33.33% - 20px]"
               href="https://open.spotify.com/intl-de/artist/3L8Rwqoo75Sx8LtX4QPyxz?si=REGwxvCpRt6OlwuGCn3zNw"
               target="_blank"
             >
@@ -68,7 +68,7 @@ export const MobileDrawer = () => {
             </a>
 
             <a
-              className="text-white text-[3vb] desktop-lg:text-[2.625vb]"
+              className="text-white text-[3vb] desktop-lg:text-[2.625vb] flex-grow-0 flex-shrink-0 basis-[33.33% - 20px]"
               href=""
               target="_blank"
             >
@@ -76,7 +76,7 @@ export const MobileDrawer = () => {
             </a>
 
             <a
-              className="text-white text-[3vb] desktop-lg:text-[2.625vb]"
+              className="text-white text-[3vb] desktop-lg:text-[2.625vb] flex-grow-0 flex-shrink-0 basis-[33.33% - 20px]"
               href="https://www.instagram.com/isekku/"
               target="_blank"
             >
@@ -84,7 +84,7 @@ export const MobileDrawer = () => {
             </a>
 
             <a
-              className="text-white text-[3vb] desktop-lg:text-[2.625vb]"
+              className="text-white text-[3vb] desktop-lg:text-[2.625vb] flex-grow-0 flex-shrink-0 basis-[33.33% - 20px]"
               href="https://www.youtube.com/channel/UCgmueJwQXSEFmaIpoE5i0-A"
               target="_blank"
             >
@@ -92,7 +92,7 @@ export const MobileDrawer = () => {
             </a>
 
             <a
-              className="text-white text-[3vb] desktop-lg:text-[2.625vb]"
+              className="text-white text-[3vb] desktop-lg:text-[2.625vb] flex-grow-0 flex-shrink-0 basis-[33.33% - 20px]"
               href="https://www.twitch.tv/isekku"
               target="_blank"
             >
@@ -100,7 +100,7 @@ export const MobileDrawer = () => {
             </a>
 
             <a
-              className="text-white text-[3vb] desktop-lg:text-[2.625vb]"
+              className="text-white text-[3vb] desktop-lg:text-[2.625vb] flex-grow-0 flex-shrink-0 basis-[33.33% - 20px]"
               href="https://twitter.com/YTIsekku"
               target="_blank"
             >
