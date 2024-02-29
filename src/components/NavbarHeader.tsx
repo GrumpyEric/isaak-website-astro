@@ -122,7 +122,7 @@ export const NavbarHeader = () => {
                     : "text-white hover:text-text"
                 }
               `}
-            href=""
+            href="https://www.patreon.com/Isekku"
             target="_blank"
           >
             <FaPatreon />
