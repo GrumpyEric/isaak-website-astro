@@ -1,7 +1,8 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { FaArrowDown } from "react-icons/fa6";
+import { FaArrowDown, FaCalendarPlus } from "react-icons/fa6";
+import { Button } from "@mui/material";
 
 export const IndexPage = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -117,10 +118,25 @@ export const IndexPage = () => {
           className="w-full h-full transition opacity-90 duration-300 ease-in-out peer-hover:opacity-25 object-cover isekku"
         />
       </div>
-      <FaArrowDown className="absolute text-5xl text-text bottom-8 left-0 right-0 m-auto animate-bounce arrow" />
+      <FaArrowDown
+        className="absolute text-5xl text-text bottom-8 left-0 right-0 m-auto animate-bounce arrow hover:cursor-pointer"
+        // onClick={() => console.log("clicked")}
+        // onClick={() => scrollTo({ top: 0, left: 0, behavior: "smooth" })}
+        onClick={() =>
+          document
+            .getElementById("text1")
+            ?.scrollIntoView({ behavior: "smooth" })
+        }
+      />
 
-      <div className="container mx-auto px-8 py-16 textsection">
-        <div className="flex flex-col flex-1 desktop:h-[25dvh] mobile:h-[50svh] mobile:gap-10 justify-center items-center text1">
+      <div
+        id="textsection"
+        className="container mx-auto px-8 py-16 textsection"
+      >
+        <div
+          id="text1"
+          className="flex flex-col flex-1 desktop:h-[25dvh] mobile:h-[50svh] mobile:gap-10 justify-center items-center text1"
+        >
           <p className="desktop-lg:text-5xl desktop:text-3xl mobile:text-3xl text-center">
             Hi, I am Isaak, a.k.a. <b className="text-accent">Isekku</b>!
           </p>
@@ -128,6 +144,14 @@ export const IndexPage = () => {
             Welcome to my website, where you can take a look at my life and
             music.
           </p>
+          <a
+            // appointment button
+            className="flex items-center gap-2 rounded-md p-2 text-[2vb] text-white bg-text desktop:hidden"
+            href=""
+          >
+            <FaCalendarPlus />
+            Schedule appointment now!
+          </a>
         </div>
 
         <div className="flex flex-1 flex-row desktop:h-[75dvh] mobile:h-[50svh] image2">

@@ -3,6 +3,7 @@ import { Button, SwipeableDrawer } from "@mui/material";
 import React from "react";
 import {
   FaBars,
+  FaCalendarPlus,
   FaInstagram,
   FaPatreon,
   FaSpotify,
@@ -18,14 +19,15 @@ export const MobileDrawer = () => {
     <>
       {!openDrawer ? (
         <button
-          className="fixed z-10 desktop:hidden bottom-[7.5%] right-[7.5%] bg-white focus:opacity-75 w-[6.25svh] h-[6.25svh] rounded-[50%]"
+          className="fixed z-10 desktop:hidden bottom-[7.5%] right-[7.5%] bg-white focus:opacity-75 w-[7svh] h-[7svh] rounded-[50%]"
           onClick={() => setOpenDrawer(true)}
         >
-          <FaBars className="m-auto w-[2svh] h-[2svh]" />
+          <FaBars className="m-auto w-[2.25svh] h-[2.25svh]" />
         </button>
       ) : null}
       <SwipeableDrawer
         anchor="bottom"
+        onScroll={() => setOpenDrawer(false)}
         open={openDrawer}
         onOpen={() => setOpenDrawer(true)}
         onClose={() => setOpenDrawer(false)}
@@ -48,8 +50,8 @@ export const MobileDrawer = () => {
             "
             >
               Home
-            </a> */}
-            {/* <a
+            </a>
+            <a
               href="shop"
               className="text-[2vb] text-white desktop-lg:text-[1.75vb] transition ease-in-out duration-200
             "
@@ -57,6 +59,7 @@ export const MobileDrawer = () => {
               Shop
             </a> */}
           </div>
+
           <div className="flex flex-row flex-wrap gap-[4.5vb]">
             <a
               // social icons
