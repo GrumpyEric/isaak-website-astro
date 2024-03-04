@@ -2,7 +2,6 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaArrowDown, FaCalendarPlus } from "react-icons/fa6";
-import { Button } from "@mui/material";
 
 export const IndexPage = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -14,20 +13,20 @@ export const IndexPage = () => {
     });
 
     gsap.to(".titleimage", {
-      opacity: -1,
       scrollTrigger: {
-        trigger: ".textsection",
+        trigger: ".text1",
         scrub: true,
       },
+      opacity: 0,
     });
 
     gsap.to(".arrow", {
-      opacity: -1,
       scrollTrigger: {
-        trigger: ".textsection",
+        trigger: ".text1",
         scrub: true,
         end: "top center",
       },
+      opacity: 0,
     });
 
     gsap.fromTo(
