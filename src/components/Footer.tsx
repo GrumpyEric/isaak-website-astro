@@ -18,24 +18,24 @@ export function Footer() {
     <footer className="bg-accent w-full desktop:py-10 mobile:py-1/16 desktop:px-20 mobile:px-1/16 bottom-0">
       <div className="flex flex-col justify-center gap-[2vb]">
         <div className="flex flex-1 flex-col items-center gap-[0.1vb] text-white">
-          <p className="desktop:text-[4.5vb] mobile:text-[4vb] font-osaka font-medium">
+          <p className="desktop:text-[4.5vb] mobile:text-[6svh] font-osaka font-medium">
             Isekku
           </p>
-          <p className="desktop:text-[1.25vb] mobile:text-[1vb]">
+          <p className="desktop:text-[1.25vb] mobile:text-[1.5svh]">
             {"Copyright © "}
             {currentYear}
             {" Isaak Michailoglou"}
           </p>
         </div>
 
-        <div className="flex flex-1 justify-center gap-[2vb] text-white desktop:text-[1.5vb] mobile:text-[1.25vb]">
+        <div className="flex flex-1 justify-center gap-[2vb] text-white desktop:text-[1.5vb] mobile:text-[2svh]">
           <p>Legal Stuff</p>
 
           <p>Privacy Policy</p>
           <p>Security</p>
         </div>
 
-        <ul className="flex flex-1 justify-center gap-[2vb] text-white desktop:text-[2vb] mobile:text-[1.75vb]">
+        <ul className="flex flex-1 justify-center gap-[2vb] text-white desktop:text-[2vb] mobile:text-[3svh]">
           <li>
             <a
               href="https://open.spotify.com/intl-de/artist/3L8Rwqoo75Sx8LtX4QPyxz?si=REGwxvCpRt6OlwuGCn3zNw"
