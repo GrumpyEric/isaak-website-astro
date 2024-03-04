@@ -117,17 +117,17 @@ export const IndexPage = () => {
           loading="lazy"
           className="w-full h-full transition opacity-90 duration-300 ease-in-out peer-hover:opacity-25 object-cover isekku"
         />
+        <FaArrowDown
+          className="absolute text-5xl text-text bottom-8 left-0 right-0 m-auto animate-bounce arrow hover:cursor-pointer"
+          // onClick={() => console.log("clicked")}
+          // onClick={() => scrollTo({ top: 0, left: 0, behavior: "smooth" })}
+          onClick={() =>
+            document
+              .getElementById("textsection")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+        />
       </div>
-      <FaArrowDown
-        className="absolute text-5xl text-text bottom-8 left-0 right-0 m-auto animate-bounce arrow hover:cursor-pointer"
-        // onClick={() => console.log("clicked")}
-        // onClick={() => scrollTo({ top: 0, left: 0, behavior: "smooth" })}
-        onClick={() =>
-          document
-            .getElementById("textsection")
-            ?.scrollIntoView({ behavior: "smooth" })
-        }
-      />
 
       <div
         id="textsection"
