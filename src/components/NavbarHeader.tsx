@@ -5,12 +5,10 @@ import {
   FaTwitter,
   FaSpotify,
   FaPatreon,
-  FaShop,
-  FaHouse,
   FaCalendarPlus,
-  FaHammer,
 } from "react-icons/fa6";
 import { useState, useEffect } from "react";
+// import { AppointmentModal } from "@/components/Modals/ApppointmentModal";
 
 export const NavbarHeader = () => {
   const [animateHeader, setAnimateHeader] = useState(false);
@@ -41,13 +39,6 @@ export const NavbarHeader = () => {
       }`}
     >
       <div className="flex flex-row gap-5 mobile:hidden justify-start desktop:w-[40%]">
-        <p
-          className={`flex justify-center items-center gap-4 text-[1.6vb] desktop-lg:text-[1.5vb] transition ease-in-out duration-200
-            ${animateHeader ? "text-text" : "text-white"}`}
-        >
-          <FaHammer />
-          Site under construction
-        </p>
         {/* <div className="flex gap-2 items-center">
           <a
             // nav buttons
@@ -187,13 +178,17 @@ export const NavbarHeader = () => {
 
         <a
           // appointment button
+
           className={`flex items-center gap-2 border-2 rounded-md p-2 transition ease-in-out duration-200 text-[1.75vb] desktop-lg:text-[1.5vb]
           ${
             animateHeader
               ? "text-text hover:text-white border-text hover:bg-text"
               : "text-white hover:text-text border-white hover:bg-white"
           }`}
-          href=""
+          href="appointment"
+          // onMouseOver={() => import("@/components/Modals/ApppointmentModal")}
+          // onTouchStart={() => import("@/components/Modals/ApppointmentModal")}
+          // onClick={AppointmentModal}
         >
           <FaCalendarPlus />
           Schedule appointment

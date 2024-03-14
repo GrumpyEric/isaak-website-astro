@@ -26,9 +26,9 @@ const accentColor = colors.accent;
   </head>
   <body>
     <MobileDrawer client:only="react" />
-    <NavbarHeader client:load />
+    <NavbarHeader client:only="react" />
     <slot />
-    <Footer client:idle />
+    <Footer client:only="react" />
   </body>
 </html>
 <style is:global define:vars={{ backgroundColor, textColor, accentColor }}>

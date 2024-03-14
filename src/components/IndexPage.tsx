@@ -1,7 +1,9 @@
-import gsap from "gsap";
+import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import { FaArrowDown, FaCalendarPlus } from "react-icons/fa6";
+// import { AppointmentModal } from "@/components/Modals/ApppointmentModal";
 
 export const IndexPage = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -35,7 +37,6 @@ export const IndexPage = () => {
         scrollTrigger: {
           trigger: ".text1",
           scrub: true,
-          // markers: true,
         },
         x: "-50vb",
         opacity: -1,
@@ -45,7 +46,6 @@ export const IndexPage = () => {
           trigger: ".text1",
           scrub: true,
           end: "top center",
-          // markers: true,
         },
         x: 0,
         opacity: 1,
@@ -58,7 +58,6 @@ export const IndexPage = () => {
         scrollTrigger: {
           trigger: ".image2",
           scrub: true,
-          // markers: true,
         },
         x: "-50vb",
         opacity: -1,
@@ -68,7 +67,6 @@ export const IndexPage = () => {
           trigger: ".image2",
           scrub: true,
           end: "top center",
-          // markers: true,
         },
         x: 0,
         opacity: 1,
@@ -81,7 +79,6 @@ export const IndexPage = () => {
         scrollTrigger: {
           trigger: ".text2",
           scrub: true,
-          // markers: true,
         },
         x: "-50vb",
         opacity: -1,
@@ -91,7 +88,6 @@ export const IndexPage = () => {
           trigger: ".text2",
           scrub: true,
           end: "top center",
-          // markers: true,
         },
         x: 0,
         opacity: 1,
@@ -100,7 +96,7 @@ export const IndexPage = () => {
   });
 
   return (
-    <main>
+    <main className="min-h-[100vh]">
       <div className="desktop:h-[calc(100dvh-8vb)] mobile:h-[calc(100svh-7.5vb)] desktop:top-[8vb] mobile:top-[7.5vb] desktop:mb-[8vb] mobile:mb-[7.5vb] relative text-center titleimage">
         <p className="peer absolute bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 font-osaka text-text text-[8vb] font-medium text-opacity-75 transition duration-300 ease-in-out hover:scale-125 hover:text-opacity-100 hover:text-accent hover:animate-pulse mb-6 z-10 cursor-pointer title">
           Isekku
@@ -118,8 +114,6 @@ export const IndexPage = () => {
         />
         <FaArrowDown
           className="absolute text-5xl text-text bottom-8 left-0 right-0 m-auto animate-bounce arrow hover:cursor-pointer"
-          // onClick={() => console.log("clicked")}
-          // onClick={() => scrollTo({ top: 0, left: 0, behavior: "smooth" })}
           onClick={() =>
             document
               .getElementById("textsection")
@@ -146,7 +140,7 @@ export const IndexPage = () => {
           <a
             // appointment button
             className="flex items-center gap-2 rounded-md p-2 text-[2vb] text-white bg-text desktop:hidden"
-            href=""
+            href="appointment"
           >
             <FaCalendarPlus />
             Schedule appointment now!

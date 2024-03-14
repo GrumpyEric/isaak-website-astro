@@ -1,9 +1,8 @@
 import { Cancel } from "@mui/icons-material";
-import { Button, SwipeableDrawer } from "@mui/material";
+import { Button, Drawer } from "@mui/material";
 import React from "react";
 import {
   FaBars,
-  FaCalendarPlus,
   FaInstagram,
   FaPatreon,
   FaSpotify,
@@ -25,11 +24,11 @@ export const MobileDrawer = () => {
           <FaBars className="m-auto w-[2.25svh] h-[2.25svh]" />
         </button>
       ) : null}
-      <SwipeableDrawer
+      <Drawer
+        disableScrollLock
         anchor="bottom"
-        onScroll={() => setOpenDrawer(false)}
         open={openDrawer}
-        onOpen={() => setOpenDrawer(true)}
+        // onOpen={() => setOpenDrawer(true)}
         onClose={() => setOpenDrawer(false)}
       >
         <div className="flex flex-col bg-accent items-center py-[5%] px-[5%] gap-4">
@@ -111,7 +110,7 @@ export const MobileDrawer = () => {
             </a>
           </div>
         </div>
-      </SwipeableDrawer>
+      </Drawer>
     </>
   );
 };
