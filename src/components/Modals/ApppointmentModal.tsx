@@ -4,16 +4,22 @@ import { isModalOpen } from "@/stores/modalStore";
 import { Button, DialogActions, DialogContent, TextField } from "@mui/material";
 import { DateTimePicker, LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFnsV3";
-
-const submitAppointment = () => {
-  return;
-};
+import { router } from "@/app";
+import { Link, useNavigate } from "@tanstack/react-router";
 
 const AppointmentContent = () => {
   const [name, setName] = React.useState<string>("");
   const [email, setEmail] = React.useState<string>("");
   const [message, setMessage] = React.useState<string>("");
   const [time, setTime] = React.useState<number>(Date.now);
+
+  // const navigate = useNavigate();
+
+  // const handleCloseModal = () => {
+  //   navigate({ to: "/" });
+  // };
+
+  function handleSubmitModal() {}
 
   return (
     <>
@@ -52,8 +58,7 @@ const AppointmentContent = () => {
       </DialogContent>
       <DialogActions>
         <Button
-          // onClick={() => isModalOpen.set(false)}
-          onClick={() => window.history.back()}
+        // onClick={() => handleCloseModal()}
         >
           close
         </Button>

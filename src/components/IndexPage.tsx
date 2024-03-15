@@ -3,7 +3,6 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { FaArrowDown, FaCalendarPlus } from "react-icons/fa6";
-// import { AppointmentModal } from "@/components/Modals/ApppointmentModal";
 
 export const IndexPage = () => {
   gsap.registerPlugin(ScrollTrigger);

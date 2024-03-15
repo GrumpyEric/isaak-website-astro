@@ -8,13 +8,13 @@ import netlifyIntegration from "@astrojs/netlify";
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), tailwind()],
-  // adapter: netlifyIntegration(),
-  // output: "server",
+  adapter: netlifyIntegration(),
+  output: "server",
   vite: {
     appType: "spa",
-    // plugins: [
-    //   TanStackRouterVite(),
-    // ],
+    plugins: [
+      TanStackRouterVite(),
+    ],
     ssr: {
       noExternal: ["react-icons", "@mui/material", "gsap"]
     },

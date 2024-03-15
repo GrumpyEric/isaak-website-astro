@@ -8,6 +8,8 @@ import {
   FaCalendarPlus,
 } from "react-icons/fa6";
 import { useState, useEffect } from "react";
+import { Button } from "@mui/material";
+import { Link } from "@tanstack/react-router";
 // import { AppointmentModal } from "@/components/Modals/ApppointmentModal";
 
 export const NavbarHeader = () => {
@@ -185,7 +187,7 @@ export const NavbarHeader = () => {
               ? "text-text hover:text-white border-text hover:bg-text"
               : "text-white hover:text-text border-white hover:bg-white"
           }`}
-          href="appointment"
+          // href="appointment"
           // onMouseOver={() => import("@/components/Modals/ApppointmentModal")}
           // onTouchStart={() => import("@/components/Modals/ApppointmentModal")}
           // onClick={AppointmentModal}
@@ -193,6 +195,12 @@ export const NavbarHeader = () => {
           <FaCalendarPlus />
           Schedule appointment
         </a>
+        {/* <Link></Link> */}
+        {/* <Button
+        // LinkComponent={Link} href="appointment"
+        >
+          Schedule appointment
+        </Button> */}
       </div>
     </header>
   );

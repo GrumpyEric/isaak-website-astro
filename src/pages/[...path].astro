@@ -1,8 +1,8 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import { IndexPage } from "@/components/IndexPage";
+import { App } from "@/app";
 ---
 
 <Layout title="Homepage">
-  <IndexPage client:only="react" />
+  <App client:only="react" />
 </Layout>
