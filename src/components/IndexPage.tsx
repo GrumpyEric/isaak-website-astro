@@ -3,7 +3,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { FaArrowDown, FaCalendarPlus } from "react-icons/fa6";
-// import { AppointmentModal } from "@/components/Modals/ApppointmentModal";
+import { AppointmentModal } from "@/components/Modals/ApppointmentModal";
 
 export const IndexPage = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -137,14 +137,14 @@ export const IndexPage = () => {
             Welcome to my website, where you can take a look at my life and
             music.
           </p>
-          <a
+          <button
             // appointment button
             className="flex items-center gap-2 rounded-md p-2 text-[2vb] text-white bg-text desktop:hidden"
-            href="appointment"
+            onClick={AppointmentModal}
           >
             <FaCalendarPlus />
             Schedule appointment now!
-          </a>
+          </button>
         </div>
 
         <div className="flex flex-1 flex-row desktop:h-[75dvh] mobile:h-[50svh] image2">

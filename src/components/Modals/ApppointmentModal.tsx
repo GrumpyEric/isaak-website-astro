@@ -46,17 +46,15 @@ const AppointmentContent = () => {
             label="Time"
             value={time}
             onChange={(newValue) => setTime(newValue)}
-            format="dd.MM.yyy hh:mm aa"
+            ampmInClock={false}
+            ampm={false}
+            format="dd.MM.yyyy HH:mm"
+            minDate={Date.now()}
           />
         </LocalizationProvider>
       </DialogContent>
       <DialogActions>
-        <Button
-          // onClick={() => isModalOpen.set(false)}
-          onClick={() => window.history.back()}
-        >
-          close
-        </Button>
+        <Button onClick={() => isModalOpen.set(false)}>close</Button>
         {/* <a href="mailto:eric.arszelewski@gmail.com">Click to Send an Email</a> */}
         {/* <Button LinkComponent={"a"} href="mailto:eric.arszelewski@gmail.com">
           Submit

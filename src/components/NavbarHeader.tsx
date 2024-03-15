@@ -8,7 +8,7 @@ import {
   FaCalendarPlus,
 } from "react-icons/fa6";
 import { useState, useEffect } from "react";
-// import { AppointmentModal } from "@/components/Modals/ApppointmentModal";
+import { AppointmentModal } from "@/components/Modals/ApppointmentModal";
 
 export const NavbarHeader = () => {
   const [animateHeader, setAnimateHeader] = useState(false);
@@ -176,7 +176,7 @@ export const NavbarHeader = () => {
           </a>
         </div>
 
-        <a
+        <button
           // appointment button
 
           className={`flex items-center gap-2 border-2 rounded-md p-2 transition ease-in-out duration-200 text-[1.75vb] desktop-lg:text-[1.5vb]
@@ -185,14 +185,13 @@ export const NavbarHeader = () => {
               ? "text-text hover:text-white border-text hover:bg-text"
               : "text-white hover:text-text border-white hover:bg-white"
           }`}
-          href="appointment"
           // onMouseOver={() => import("@/components/Modals/ApppointmentModal")}
           // onTouchStart={() => import("@/components/Modals/ApppointmentModal")}
-          // onClick={AppointmentModal}
+          onClick={AppointmentModal}
         >
           <FaCalendarPlus />
           Schedule appointment
-        </a>
+        </button>
       </div>
     </header>
   );

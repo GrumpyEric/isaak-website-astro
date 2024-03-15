@@ -3,6 +3,7 @@ import { NavbarHeader } from "@/components/NavbarHeader";
 import { Footer } from "@/components/Footer";
 import { colors } from "@/components/constants/colors";
 import { MobileDrawer } from "@/components/MobileDrawer";
+import { Modal } from "@/components/Modal";
 
 interface Props {
   title: string;
@@ -15,7 +16,7 @@ const accentColor = colors.accent;
 ---
 
 <!doctype html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Website of Isekku" />
@@ -25,6 +26,7 @@ const accentColor = colors.accent;
     <title>{title}</title>
   </head>
   <body>
+    <Modal client:only="react" />
     <MobileDrawer client:only="react" />
     <NavbarHeader client:only="react" />
     <slot />
