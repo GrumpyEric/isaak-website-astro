@@ -31,27 +31,27 @@ const accentColor = colors.accent;
     <NavbarHeader client:only="react" />
     <slot />
     <Footer client:only="react" />
+    <style is:global define:vars={{ backgroundColor, textColor, accentColor }}>
+      html {
+        color: var(--textColor);
+        background: var(--backgroundColor);
+      }
+
+      html,
+      body {
+        width: 100%;
+        /* height: 100vh;  */
+        margin: 0;
+        overflow: auto;
+      }
+
+      @font-face {
+        font-family: "Osaka";
+        src: url("/fonts/osaka-re.ttf");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
   </body>
 </html>
-<style is:global define:vars={{ backgroundColor, textColor, accentColor }}>
-  html {
-    color: var(--textColor);
-    background: var(--backgroundColor);
-  }
-
-  html,
-  body {
-    width: 100%;
-    /* height: 100vh;  */
-    margin: 0;
-    overflow: auto;
-  }
-
-  @font-face {
-    font-family: "Osaka";
-    src: url("/fonts/osaka-re.ttf");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-</style>

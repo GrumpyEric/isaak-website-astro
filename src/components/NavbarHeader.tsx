@@ -5,7 +5,7 @@ import {
   FaTwitter,
   FaSpotify,
   FaPatreon,
-  FaCalendarPlus,
+  FaMessage,
 } from "react-icons/fa6";
 import { useState, useEffect } from "react";
 import { AppointmentModal } from "@/components/Modals/ApppointmentModal";
@@ -176,7 +176,7 @@ export const NavbarHeader = () => {
           </a>
         </div>
 
-        <button
+        <a
           // appointment button
 
           className={`flex items-center gap-2 border-2 rounded-md p-2 transition ease-in-out duration-200 text-[1.75vb] desktop-lg:text-[1.5vb]
@@ -185,13 +185,11 @@ export const NavbarHeader = () => {
               ? "text-text hover:text-white border-text hover:bg-text"
               : "text-white hover:text-text border-white hover:bg-white"
           }`}
-          // onMouseOver={() => import("@/components/Modals/ApppointmentModal")}
-          // onTouchStart={() => import("@/components/Modals/ApppointmentModal")}
-          onClick={AppointmentModal}
+          href="mailto:isekkumusic@gmail.com"
         >
-          <FaCalendarPlus />
-          Schedule appointment
-        </button>
+          <FaMessage />
+          Contact me now!
+        </a>
       </div>
     </header>
   );
