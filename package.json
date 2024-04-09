@@ -3,7 +3,7 @@
   "type": "commonjs",
   "version": "1.2",
   "scripts": {
-    "email": "email dev",
+    "email": "email dev --dir src/emails",
     "dev": "astro dev --host",
     "start": "astro dev",
     "build": "astro build",
@@ -35,6 +35,7 @@
     "react-hook-form": "^7.51.0",
     "react-icons": "^4.10.1",
     "react-social-media-embed": "^2.5.9",
+    "resend": "^3.2.0",
     "tailwindcss": "^3.3.3"
   },
   "devDependencies": {
