@@ -9,6 +9,8 @@ import {
   FaSpotify,
   FaPatreon,
 } from "react-icons/fa6";
+import { CopyrightModal } from "./Modals/CopyrightModal";
+import { PrivacyModal } from "./Modals/PrivacyModal";
 
 const time = new Date();
 const currentYear = getYear(time);
@@ -29,10 +31,20 @@ export function Footer() {
         </div>
 
         <div className="flex flex-1 justify-center gap-[2vb] text-white desktop:text-[1.5vb] mobile:text-[2svh]">
-          <p>Legal Stuff</p>
-
-          <p>Privacy Policy</p>
-          <p>Security</p>
+          <button
+            onClick={CopyrightModal}
+            className="transition ease-in-out duration-200 hover:text-black"
+          >
+            Copyright Notice
+          </button>
+          <button
+            onClick={PrivacyModal}
+            className="transition ease-in-out duration-200 hover:text-black"
+          >
+            Privacy Notice
+          </button>
+          {/* <p>Copyright Notice</p>
+          <p>Privacy Notice</p> */}
         </div>
 
         <ul className="flex flex-1 justify-center gap-[2vb] text-white desktop:text-[2vb] mobile:text-[3svh]">
