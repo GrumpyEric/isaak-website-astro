@@ -3,7 +3,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { FaArrowDown, FaMessage } from "react-icons/fa6";
-import { AppointmentModal } from "@/components/Modals/ApppointmentModal";
+import { IsekkuContent } from "./IsekkuContent";
 
 export const IndexPage = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -112,14 +112,33 @@ export const IndexPage = () => {
           loading="lazy"
           className="w-full h-full transition opacity-90 duration-300 ease-in-out peer-hover:opacity-25 object-cover isekku"
         />
-        <FaArrowDown
-          className="absolute text-5xl text-text bottom-8 left-0 right-0 m-auto animate-bounce arrow hover:cursor-pointer"
+
+        <div
           onClick={() =>
             document
               .getElementById("textsection")
               ?.scrollIntoView({ behavior: "smooth" })
           }
-        />
+          className="flex justify-center w-fit gap-4 p-4 absolute opacity-90 bg-accent rounded-md border-2 border-white  text-5xl text-white bottom-8 left-0 right-0 m-auto animate-bounce arrow hover:cursor-pointer"
+        >
+          <FaArrowDown
+          // className="absolute text-5xl text-text bottom-8 left-0 right-0 m-auto animate-bounce arrow hover:cursor-pointer"
+          // onClick={() =>
+          //   document
+          //     .getElementById("textsection")
+          //     ?.scrollIntoView({ behavior: "smooth" })
+          // }
+          />
+          <p>New song out now!</p>
+          <FaArrowDown
+          // className="absolute text-5xl text-text bottom-8 left-0 right-0 m-auto animate-bounce arrow hover:cursor-pointer"
+          // onClick={() =>
+          //   document
+          //     .getElementById("textsection")
+          //     ?.scrollIntoView({ behavior: "smooth" })
+          // }
+          />
+        </div>
       </div>
 
       <div
@@ -141,6 +160,7 @@ export const IndexPage = () => {
             // appointment button
             className="flex items-center gap-2 rounded-md p-2 text-[2vb] text-white bg-text desktop:hidden"
             href="mailto:isekkumusic@gmail.com"
+            target="_blank"
             // onClick={AppointmentModal}
           >
             <FaMessage />
@@ -148,10 +168,13 @@ export const IndexPage = () => {
           </a>
         </div>
 
+        <IsekkuContent />
+
         <div className="flex flex-1 flex-row desktop:h-[75dvh] mobile:h-[50svh] image2">
           <img
             alt="Isekku sketch"
-            src="/images/Isekku.webp"
+            loading="lazy"
+            src="/images/isekku.webp"
             width={2048}
             height={2048}
             className="object-contain"

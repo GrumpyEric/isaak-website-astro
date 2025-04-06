@@ -40,7 +40,7 @@ const accentColor = colors.accent;
       html,
       body {
         width: 100%;
-        /* height: 100vh;  */
+        /* height: 100vh; */
         margin: 0;
         overflow: auto;
       }
@@ -55,6 +55,58 @@ const accentColor = colors.accent;
 
       .CopyrightPrivacy h2 {
         font-weight: bold;
+      }
+
+      #container {
+        background-color: grey;
+        display: flex;
+        /* flex-wrap: wrap;
+        flex-direction: column;
+        height: 700%;
+        width: auto; */
+      }
+
+      .module {
+        /* height: 100%; */
+        height: 100vh;
+      }
+
+      .dark {
+        width: 100%;
+        flex: 0 0 100%;
+        background-color: rgb(99, 99, 99);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .white {
+        width: 200%;
+        flex: 0 0 200%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .blue {
+        width: 100%;
+        flex: 0 0 100%;
+        background-color: blue;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .orange {
+        width: 300%;
+        flex: 0 0 300%;
+        background-color: orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 2px solid black;
       }
     </style>
   </body>

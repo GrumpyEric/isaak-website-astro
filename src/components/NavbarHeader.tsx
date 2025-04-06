@@ -186,6 +186,7 @@ export const NavbarHeader = () => {
               : "text-white hover:text-text border-white hover:bg-white"
           }`}
           href="mailto:isekkumusic@gmail.com"
+          target="_blank"
         >
           <FaMessage />
           Contact me now!

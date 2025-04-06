@@ -43,6 +43,9 @@ export const MobileDrawer = () => {
             Close
           </Button>
           <div className="flex flex-col items-center pb-8 gap-4">
+            <p className="text-white text-[3vb] desktop-lg:text-[2.625vb] flex-grow-0 flex-shrink-0 basis-[33.33% - 20px]">
+              Visit my social media pages!
+            </p>
             {/* <a
               href="/"
               className="text-[2vb] text-white desktop-lg:text-[1.75vb] transition ease-in-out duration-200
