@@ -119,25 +119,11 @@ export const IndexPage = () => {
               .getElementById("textsection")
               ?.scrollIntoView({ behavior: "smooth" })
           }
-          className="flex justify-center w-fit gap-4 p-4 absolute opacity-90 bg-accent rounded-md border-2 border-white  text-5xl text-white bottom-8 left-0 right-0 m-auto animate-bounce arrow hover:cursor-pointer"
+          className="flex w-fit gap-4 p-4 absolute opacity-90 bg-accent rounded-md border-2 border-white text-5xl text-white bottom-8 left-0 right-0 m-auto animate-bounce arrow hover:cursor-pointer"
         >
-          <FaArrowDown
-          // className="absolute text-5xl text-text bottom-8 left-0 right-0 m-auto animate-bounce arrow hover:cursor-pointer"
-          // onClick={() =>
-          //   document
-          //     .getElementById("textsection")
-          //     ?.scrollIntoView({ behavior: "smooth" })
-          // }
-          />
+          <FaArrowDown />
           <p>New song out now!</p>
-          <FaArrowDown
-          // className="absolute text-5xl text-text bottom-8 left-0 right-0 m-auto animate-bounce arrow hover:cursor-pointer"
-          // onClick={() =>
-          //   document
-          //     .getElementById("textsection")
-          //     ?.scrollIntoView({ behavior: "smooth" })
-          // }
-          />
+          <FaArrowDown />
         </div>
       </div>
 
@@ -159,7 +145,7 @@ export const IndexPage = () => {
           <a
             // appointment button
             className="flex items-center gap-2 rounded-md p-2 text-[2vb] text-white bg-text desktop:hidden"
-            href="mailto:isekkumusic@gmail.com"
+            href="isekkumusic@gmail.com"
             target="_blank"
             // onClick={AppointmentModal}
           >

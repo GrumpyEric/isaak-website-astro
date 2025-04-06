@@ -13,7 +13,7 @@ const CopyrightContent = () => {
         <p>
           If you require any more information or have any questions about our
           site's disclaimer, please feel free to contact us by email at{" "}
-          <Link href="mailto:isekkumusic@gmail.com">
+          <Link href="mailto:isekkumusic@gmail.com" target="_blank">
             {" "}
             isekkumusic@gmail.com
           </Link>

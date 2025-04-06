@@ -21,7 +21,7 @@ export const Modal = () => {
   );
 };
 
-export const useModal = ({ open, title, content }: ModalType) => {
+export const useModal = ({ open, title, content, className }: ModalType) => {
   isModalOpen.set(open);
   modalTitle.set(title);
   modalContent.set(content);

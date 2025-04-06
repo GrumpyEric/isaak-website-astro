@@ -112,6 +112,9 @@ export const MobileDrawer = () => {
               <FaTwitter />
             </a>
           </div>
+          <p className="text-white text-[3vb] desktop-lg:text-[2.625vb] flex-grow-0 flex-shrink-0 basis-[33.33% - 20px]">
+            Or contact me via E-mail: isekku@gmail.com
+          </p>
         </div>
       </Drawer>
     </>
